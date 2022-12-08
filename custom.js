@@ -28,10 +28,20 @@ $(function(){
   });
 
   /* Slick - Review */
-  $('.review-slider').slick({
+  $('.review-slider, .mockup-slider').slick({
     infinite: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 2000,
+  });
+
+   /* Video Modal */
+  $('.open-modal').click(function(){
+    $('.video-modal').fadeIn()
+    $('body').addClass('active')
+  })
+  $('.close-modal').click(function(){
+    $('.video-modal').fadeOut()
+    $('body').removeClass('active')
   });
 })
