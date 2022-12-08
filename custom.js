@@ -26,4 +26,12 @@ $(function(){
     $(this).parent().addClass('active')
     $(this).parent().siblings().removeClass('active')
   });
+
+  /* Slick - Review */
+  $('.review-slider').slick({
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 })
